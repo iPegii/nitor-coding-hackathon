@@ -4,4 +4,4 @@ npm install -g json-server
 
 npm start
 
-npx json-server --port=3001 --watch db.json
+npx json-server --port=3001 --watch src/data/hashtags.json
