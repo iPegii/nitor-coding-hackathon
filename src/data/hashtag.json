@@ -1,0 +1,25 @@
+{
+    "hashtags": [
+      {
+        "id": 1,
+        "hashtag": "HTML is easy",
+        "date": "2022-1-17T17:30:31.098Z",
+        "important": true,
+        "people":["matti","teppo","luuk","ritva"]
+      },
+      {
+        "id": 2,
+        "hashtag": "HTML is easy",
+        "date": "2022-1-17T17:30:31.100Z",
+        "important": true,
+        "people":["matti","teppo","luuk","ritva"]
+      },
+      {
+        "id": 3,
+        "hashtag": "HTML is easy",
+        "date": "2022-1-17T17:30:31.200Z",
+        "important": true,
+        "people":["matti","teppo","luuk","ritva"]
+      }
+    ]
+  }
