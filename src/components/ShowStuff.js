@@ -18,7 +18,26 @@ const App = () => {
             axios
             .get('https://hackathlon.nitorio.us/activities')
             .then(response => {
-              setActivities(response.data)
+              let newActivities = []
+              response.data.map(a =>  {          
+                let tempActivity = a
+                users.map(u => {
+                  if(tempActivity.id === u.activityId)
+                  if(tempActivity.personsIn) {
+                    tempActivity = {...tempActivity, personsIn: tempActivity.personsIn+1}
+                  } else {
+                    tempActivity = {...tempActivity, personsIn: 1}
+                  }
+                  return tempActivity
+                  }
+                )
+                console.log(tempActivity)
+                newActivities = newActivities.concat(tempActivity)
+           return 1  
+          }
+          )
+            console.log(newActivities)
+              setActivities(newActivities)
             })
           })
 
@@ -30,7 +49,7 @@ const App = () => {
 
 
       }
-      useEffect(hook, [])
+      useEffect(hook, [users])
       
     return(
     <div>
