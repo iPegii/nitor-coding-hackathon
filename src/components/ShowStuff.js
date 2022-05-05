@@ -50,15 +50,16 @@ const App = () => {
       }
       useEffect(hook, [users])
       
-    console.log(activities)
     return(
     <div>
-        <p>wow</p>
+        <h1>NINTRESSIT</h1>
         {activities.map((a,index) => {
           return (<div key={index}>
-             <p>{a.name} {a.personsIn}</p>
-             <div>{hashtags.map((h,index) =>{
-               return<span style={{marginRight: "1em"}} key={index}>{h.hashtag}</span>}
+             <p>{h.hashtag}</p>
+             {console.log(h.people)}
+             <div>{users.filter(user => h.people.indexOf(user.id) !== -1)
+               .map((u,index) =>{
+               return<span style={{marginRight: "1em"}} key={index}>{u.name}</span>}
                )}</div>
              </div>)
         })}
