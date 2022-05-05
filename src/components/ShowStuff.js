@@ -34,7 +34,7 @@ const App = () => {
     console.log(activities)
     return(
     <div>
-        <p>wow</p>
+        <h1>NINTRESSIT</h1>
         {activities.map((a,index) => {
           return (<div key={index}>
              <p>{a.name}</p>
