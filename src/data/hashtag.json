@@ -2,24 +2,31 @@
     "hashtags": [
       {
         "id": 1,
-        "hashtag": "HTML is easy",
-        "date": "2022-1-17T17:30:31.098Z",
-        "important": true,
-        "people":["matti","teppo","luuk","ritva"]
+        "hashtag": "Boulderointi",
+        "date": "2022-1-17T17:30:31.100Z",
+        "important": false,
+        "people":["U1","U3","U5","U7"]
       },
       {
         "id": 2,
-        "hashtag": "HTML is easy",
-        "date": "2022-1-17T17:30:31.100Z",
+        "hashtag": "Poro",
+        "date": "2022-1-17T17:30:31.200Z",
         "important": true,
-        "people":["matti","teppo","luuk","ritva"]
+        "people":["U6"]
       },
       {
         "id": 3,
-        "hashtag": "HTML is easy",
-        "date": "2022-1-17T17:30:31.200Z",
+        "hashtag": "Mimosa",
+        "date": "2022-1-17T17:30:31.098Z",
         "important": true,
-        "people":["matti","teppo","luuk","ritva"]
+        "people":["U1","U2","U3","U4"]
+      },
+      {
+        "id": 4,
+        "hashtag": "Sillis",
+        "date": "2022-1-17T17:30:31.300Z",
+        "important": true,
+        "people":["U6"]
       }
     ]
   }
