@@ -57,9 +57,27 @@ const App = () => {
         setSearchBar(value)
         console.log(value)
       }
+
+      const handlePostingHashtag = (event) => {
+          event.preventDefault()
+          const hashtagObject = {
+            id: newNote,
+            hashtag: event.target.value,
+            date: new Date().toISOString(),
+            people: []
+          }
+        
+          axios.post('http://localhost:3001/hashtags', hashtagObject)
+            .then(response => {      
+              console.log(response)    
+            })}
+      }
+
+
      const hashtagsFiltered = hashtags.filter(h => {
        if(searchBar.length !== 0) {
-        if(h.hashtag === searchBar) {
+         console.log(h.hashtag.includes(searchBar))
+        if(h.hashtag.toLowerCase().includes(searchBar.toLowerCase())) {
           return h
         }
        } else {
@@ -70,8 +88,8 @@ const App = () => {
     return(
     <div style={{display: "grid", margin: "auto"}}>
         <h1>NINTRESSIT</h1>
-        <h2>{searchBar}</h2>
         <SearchBar handleSearchBar={handleSearchBar} searchBar={searchBar} hashtags={hashtags} style={{margin: "auto"}}></SearchBar>
+        <div style={{marginTop: "4em"}} ></div>
         {hashtagsFiltered.map((h,index) => {
           return (<div key={index}>
              <p>{h.hashtag}</p>

@@ -4,28 +4,24 @@
         "id": 1,
         "hashtag": "Boulderointi",
         "date": "2022-1-17T17:30:31.100Z",
-        "important": false,
         "people":["U1","U3","U5","U7"]
       },
       {
         "id": 2,
         "hashtag": "Poro",
         "date": "2022-1-17T17:30:31.200Z",
-        "important": true,
         "people":["U6"]
       },
       {
         "id": 3,
         "hashtag": "Mimosa",
         "date": "2022-1-17T17:30:31.098Z",
-        "important": true,
         "people":["U1","U2","U3","U4"]
       },
       {
         "id": 4,
         "hashtag": "Sillis",
         "date": "2022-1-17T17:30:31.300Z",
-        "important": true,
         "people":["U6"]
       }
     ]

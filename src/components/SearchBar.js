@@ -14,7 +14,7 @@ import Autocomplete from '@mui/material/Autocomplete';
       options={filteredHashtags}
       onInputChange={(event,value) =>handleSearchBar(value)}
       sx={{ width: 300 }}
-      renderInput={(params) => <TextField {...params} label="Movie" />}
+      renderInput={(params) => <TextField  {...params} label="Movie" />}
     />
   );
 }
