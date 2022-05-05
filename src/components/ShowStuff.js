@@ -33,8 +33,8 @@ const App = () => {
       
     return(
     <div>
-        <p>wow</p>
-        {hashtags.map((h,index) => {
+        <h1>NINTRESSIT</h1>
+        {activities.map((a,index) => {
           return (<div key={index}>
              <p>{h.hashtag}</p>
              {console.log(h.people)}
