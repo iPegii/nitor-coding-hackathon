@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import Popupper from './Popupper'
 
 const App = () => {
     const [ hashtags, setHashtags ] = useState([])
@@ -37,11 +38,11 @@ const App = () => {
         {hashtags.map((h,index) => {
           return (<div key={index}>
              <p>{h.hashtag}</p>
-             {console.log(h.people)}
-             <div>{users.filter(user => h.people.indexOf(user.id) !== -1)
+             <Popupper users={users.filter(user => h.people.indexOf(user.id) !== -1)
                .map((u,index) =>{
                return<span style={{marginRight: "1em"}} key={index}>{u.name}</span>}
-               )}</div>
+               )}></Popupper>
+             {console.log(h.people)}
              </div>)
         })}
     </div>
