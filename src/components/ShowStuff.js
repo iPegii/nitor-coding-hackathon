@@ -38,6 +38,25 @@ const App = () => {
           )
             console.log(newActivities)
               setActivities(newActivities)
+              response.data.map(a =>  {          
+                let tempActivity = a
+                users.map(u => {
+                  if(tempActivity.id === u.activityId)
+                  if(tempActivity.personsIn) {
+                    tempActivity = {...tempActivity, personsIn: tempActivity.personsIn+1}
+                  } else {
+                    tempActivity = {...tempActivity, personsIn: 1}
+                  }
+                  return tempActivity
+                  }
+                )
+                console.log(tempActivity)
+                newActivities = newActivities.concat(tempActivity)
+           return 1  
+          }
+          )
+            console.log(newActivities)
+              setActivities(newActivities)
             })
           })
 
