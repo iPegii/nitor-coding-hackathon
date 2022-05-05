@@ -35,10 +35,14 @@ const App = () => {
         const userHashtags = hashtags.filter(h => h.people.indexOf(singleUser.singleUser[0]) !== -1)
        return(
            <div>
+           <ul>
            {userHashtags.map((h,index) => {
-                return <div key = {index}>{h.hashtag}</div>
+                return <li key = {index}>{h.hashtag}</li>
            })
             }
+            </ul>
+            <input></input>
+            <button>Lisää</button>
             </div>
        )
     }
