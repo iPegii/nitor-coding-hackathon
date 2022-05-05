@@ -58,20 +58,7 @@ const App = () => {
         console.log(value)
       }
 
-      const handlePostingHashtag = (event) => {
-          event.preventDefault()
-          const hashtagObject = {
-            id: newNote,
-            hashtag: event.target.value,
-            date: new Date().toISOString(),
-            people: []
-          }
-        
-          axios.post('http://localhost:3001/hashtags', hashtagObject)
-            .then(response => {      
-              console.log(response)    
-            })}
-      }
+      
 
 
      const hashtagsFiltered = hashtags.filter(h => {
@@ -83,7 +70,7 @@ const App = () => {
        } else {
          return h
        }
-      
+       return null
       })
     return(
     <div style={{display: "grid", margin: "auto"}}>
