@@ -34,7 +34,7 @@ const App = () => {
     return(
     <div>
         <h1>NINTRESSIT</h1>
-        {activities.map((a,index) => {
+        {hashtags.map((h,index) => {
           return (<div key={index}>
              <p>{h.hashtag}</p>
              {console.log(h.people)}
